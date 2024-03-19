@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-main{
+    height: 735px;
+    width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f421c3,#d53e23);
+    background-size: 300%,300%;
+    animation: color 12s ease-in-out infinite;
+  
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.login-page{
+    height: 500px;
+    width: 400px;
+    /* background-color: rgb(200, 156, 196); */
+  
+    margin-left: 550px;
+  
+  border: 2px solid black;
+  border-radius: 12px;
+  
+  
+}
+
+input{
+    border: 2px solid black;
+}
+.lg-btn{
+    background-color: rgb(11, 100, 232);
+    width: 300px;
+    height: 50px;
+    margin-left: 50px;
+    border-radius: 12px;
+}
+.lg-btn:hover{
+    background-color: rgb(28, 6, 6);
+    color: white;
+}

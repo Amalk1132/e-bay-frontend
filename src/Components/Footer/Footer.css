@@ -1,0 +1,47 @@
+
+.main-footer{
+    background-color: rgb(243, 240, 240);
+    height: 500px;
+    width: 100%;
+   
+
+}
+.one{
+    /* background-color: red; */
+    margin-top: 60px;
+    margin-left: 80px;
+} 
+.two{
+    /* background-color: rgb(34, 163, 237); */
+    margin-top: 60px;
+    /* margin-right:170px ; */
+    
+
+}
+.three{
+    /* background-color: greenyellow; */
+    margin-top: 60px;
+    /* margin-right:270px ; */
+
+}
+.four{
+    /* background-color: cadetblue; */
+    margin-top: 60px;
+
+}
+.five{
+    /* background-color: crimson; */
+    margin-top: 60px;
+    margin-right:170px ;
+    
+
+}
+
+h1{
+    color: black;
+   
+    font-weight: bold;
+}
+li{
+    color: gray;
+}
