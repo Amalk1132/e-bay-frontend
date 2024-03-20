@@ -18,11 +18,13 @@ const Login = () => {
     e.preventDefault()
     console.log(email,password)
     try {
-    const response=axios.post("http://localhost:8090/user/login",
+    const response=await axios.post("http://localhost:8090/user/login",
     {email,password},{withCredentials:true})
 
-    if(response.data){
-      toast.success('Successfully toasted!')
+    console.log(response.data)
+
+    if(response.data.status){
+      toast.success('Successfully login!')
       navigate('/')
     }
       

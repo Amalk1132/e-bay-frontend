@@ -328,6 +328,8 @@ const data= [
        "Image":"../Asset/Electronics/mobile-14.jpg",
        "Price":1199.99
     },
+
+
     {
       "id":26,
       "Title":" smart watch",
@@ -416,13 +418,6 @@ const data= [
       "Image":"../Asset/Electronics/watch-3.webp",
       "Price":91.42
    },
-  
-  
-  
-  
-  
-  
-  
   
   
   

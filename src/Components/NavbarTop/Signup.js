@@ -10,7 +10,31 @@ import axios from "axios";
 
 const Signup = () => {
 
+  const [Otp,setOtp]=useState(" ");
+
   const Navigate=useNavigate();
+
+
+  const handlesubmit=(e)=>{
+      e.preventDefault();
+      axios.post("http://localhost:8090/user/verify",{formValues,Otp})
+      .then((res)=>{
+          if(res.data.status==="success"){
+              toast.success("otp verified ");
+              Navigate("/login");
+
+          }
+         
+      }).catch((e)=>{
+          // toast.error(e)
+          console.log(e);
+      })
+
+      
+
+  }
+
+
   
   const [formValues, setformValues] = useState({
     username: "",
@@ -23,7 +47,7 @@ const Signup = () => {
 
 
     const [Formerrors, setFormErrors] = useState({});
-    const [ShowOtp,setShowOtp]=useState(false)
+    const [ShowOtp,setShowOtp]=useState(false);
 
     const handlechange = (e) => {
       const { name, value } = e.target;
@@ -86,6 +110,7 @@ const Signup = () => {
 
 
   return (
+    <>
     <section className="bg-gray-50 dark:bg-gray-900">
       <div className={`flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ${ShowOtp ? "hidden":"block"}`}>
        
@@ -118,7 +143,7 @@ const Signup = () => {
                   placeholder="enter your name"
                   // required
                 />
-                <p>{Formerrors.username}</p>
+                <p className="text-red-600">{Formerrors.username}</p>
                  </div>
                  <div>
                   <br/>
@@ -138,7 +163,7 @@ const Signup = () => {
                   placeholder="name@company.com"
                   // required
                 />
-                 <p>{Formerrors.email}</p>
+                 <p className="text-red-600">{Formerrors.email}</p>
                 </div>
                
                 
@@ -159,7 +184,7 @@ const Signup = () => {
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   // required
                 />
-                 <p>{Formerrors.password}</p>
+                 <p className="text-red-600">{Formerrors.password}</p>
               </div>
               <div>
                 <label
@@ -177,7 +202,7 @@ const Signup = () => {
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   // required
                 />
-                 <p>{Formerrors.phone}</p>
+                 <p className="text-red-600">{Formerrors.phone}</p>
               </div>
               <div className="flex items-start">
                 
@@ -199,8 +224,16 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <Otp className={`${ShowOtp ? "block" :"hidden"}`}/>
+    
     </section>
+    <div className={`${ShowOtp?"block":"hidden"}`}>
+            <form onSubmit={handlesubmit}>
+            <input type="tel" name="otp" value={Otp} onChange={(e)=>setOtp(e.target.value)}/>
+            <button>verify otp</button>
+            </form>
+        </div>
+
+    </>
   );
 };
 
