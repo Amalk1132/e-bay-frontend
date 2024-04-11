@@ -4,11 +4,9 @@ import Images2 from "../Asset/health6.webp"
 import Images3 from "../Asset/health1.webp"
 import Images4 from "../Asset/health5.webp"
 import Images5 from "../Asset/health7.webp"
-import Images6 from "../Asset/health8.webp"
-import Images7 from "../Asset/health9.webp"
 import Images8 from "../Asset/healthpen.webp"
-import Images9 from "../Asset/health10.webp"
 import Images10 from "../Asset/health11.webp"
+import { Link } from 'react-router-dom'
 
 const HealthandBeauty = () => {
   return (
@@ -27,15 +25,12 @@ const HealthandBeauty = () => {
     <div className="  w-1/5 ">
       <h1 className="ml-8">Shop by Category</h1>
       <ul className="">
-        <li className="mt-2 text-black ml-8">Skin Care</li>
-        <li className="mt-2 text-black ml-8">Fragrances</li>
-        <li className="mt-2 text-black ml-8">Makeup</li>
-        <li className="mt-2 text-black ml-8">Vitamins & Lifestyle Supplements</li>
-        <li className="mt-2 text-black ml-8">Natural & Alternative Remedies</li>
-        <li className="mt-2 text-black ml-8">Health Care</li>
-        <li className="mt-2 text-black ml-8">Hair Care & Styling</li>
-        <li className="mt-2 text-black ml-8">Bath & Body</li>
-        <li className="mt-2 text-black ml-8">Oral Care</li>
+       <Link to={"/skincare"}><li className="mt-2 text-black ml-8">Skin Care</li></Link>
+       <Link to={"/fragrances"}><li className="mt-2 text-black ml-8">Fragrances</li></Link>
+       <Link to={"/makeup"}><li className="mt-2 text-black ml-8">Makeup</li></Link>
+       <Link to={"/healthcare"}><li className="mt-2 text-black ml-8">Health Cares</li></Link>
+       <Link to={"/haircare"}><li className="mt-2 text-black ml-8">Hair Care & Styling</li></Link> 
+       <Link to={"/oralcare"}><li className="mt-2 text-black ml-8">Oral Care</li></Link> 
 <br/>
 
 <hr/>
@@ -57,85 +52,67 @@ Shop beauty, fragrance, and more.</h2>
    
     <h1 className="text-shop ">Shop by Category</h1>
     <div className="flex gap-9 ml-9 ">
-      <div>
+    <Link to={"/skincare"}><div>
         <img
           src={Images2}
           alt=""
           className=" border hover:border-black   "
         />
-        <h4 className=" ">Skin Care</h4>
-      </div>
+        <h4 className=" ml-16 ">Skin Care</h4>
+      </div></Link> 
       
-      <div>
+      <Link to={"/fragrances"}><div>
         <img
           src={Images3}
           alt=""
           className=" border hover:border-black   "
         />
-        <h4  className=" ">Fragrances</h4>
-      </div>
-      <div>
+        <h4  className=" ml-16 ">Fragrances</h4>
+      </div></Link> 
+
+
+      <Link to={"/makeup"}><div>
         <img
           src={Images4}
           alt=""
           className=" border hover:border-black  "
         />
-        <h4 className="  ">Makeup</h4>
-      </div>
-      <div>
+        <h4 className=" ml-16  ">Makeup</h4>
+      </div></Link>
+
+      <Link to={"/healthCare"}> <div>
         <img
           src={Images5}
           alt=""
           className=" border hover:border-black   "
         />
-        <h4 className=' ' >Vitamins &  Supplements</h4>
-      </div>
-      <div>
-        <img
-          src={Images6}
-          alt=""
-          className=" border hover:border-black "
-        />
-        <h4 className=' '>Natural  Remedies</h4>
-      </div>
+        <h4 className='ml-16 ' >Health Care</h4>
+      </div></Link> 
+     
     </div>
     <br />
     <br />
   
    
     <div className="flex gap-9 ">
-      <div className="">
-        <img
-          src={Images7}
-          alt=""
-          className=" border hover:border-black  "
-        />
-         <h4 className=' '>Health Care</h4>
-      </div>
-      <div className="">
+     
+      <Link to={"/haircare"}><div className="">
         <img
           src={Images8}
           alt=""
           className=" border hover:border-black "
         />
-         <h4 className=' '>Hair Care & Styling</h4>
-      </div>
-      <div className="">
-        <img
-          src={Images9}
-          alt=""
-          className=" border hover:border-black  "
-        />
-         <h4 className=' '>Bath & Body</h4>
-      </div>
-      <div className="">
+         <h4 className=' ml-16 '>Hair Care & Styling</h4>
+      </div></Link>  
+      
+      <Link to={"/oralcare"}> <div className="">
         <img
           src={Images10}
           alt=""
           className=" border hover:border-black  "
         />
-         <h4 className=' '>Oral Care</h4>
-      </div>
+         <h4 className='ml-16  '>Oral Care</h4>
+      </div></Link> 
       
      
     </div>

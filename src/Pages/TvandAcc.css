@@ -1,0 +1,12 @@
+.main-tv-appli{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.sub-tv-appli{
+    width: 400px;
+    gap: 20px;
+    border: 2px solid black;
+    margin: 15px;
+    margin-top: 30px;
+}

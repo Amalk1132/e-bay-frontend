@@ -4,11 +4,11 @@ import Images1 from "../Asset/ele-main.webp";
 import Images2 from "../Asset/s-l1200.webp";
 import Images3 from "../Asset/smartph.webp";
 import Images4 from "../Asset/computer.webp";
-import Images5 from "../Asset/tablet.webp";
+
 import Images6 from "../Asset/s-l225 (8).webp";
 import Images7 from "../Asset/s-l225 (14).webp";
-import Images8 from "../Asset/s-l225 (13).webp";
-import Images9 from "../Asset/s-l225 (4).webp";
+
+import { Link } from "react-router-dom";
 import Images10 from "../Asset/s-l225 (6).webp";
 import Images11 from "../Asset/s-l225 (7).webp";
 import Images12 from "../Asset/s-l225 (11).webp";
@@ -34,15 +34,14 @@ const Electronics = () => {
       <div className="  w-1/5 ">
         <h1 className="ml-8">Shop by Category</h1>
         <ul className="">
-          <li className="mt-2 text-black ml-8">Camera</li>
-          <li className="mt-2 text-black ml-8">smartphones & smartWatches</li>
-          <li className="mt-2 text-black ml-8">Computers & accessories</li>
-          <li className="mt-2 text-black ml-8">Tablet & eReders</li>
-          <li className="mt-2 text-black ml-8">TV, Video & Home Audio<br/> Electronics</li>
-          <li className="mt-2 text-black ml-8">Video Games</li>
-          <li className="mt-2 text-black ml-8">Surveillance & Smart<br/> Home Electronics</li>
-          <li className="mt-2 text-black ml-8">Portable Adio &<br/> Headphones
-</li>
+          <Link to="/camera"><li className="mt-2 text-black ml-8">Camera</li></Link>
+          <Link to="/smartphandwatch"><li className="mt-2 text-black ml-8">smartphones & smartWatches</li></Link>
+         <Link to="/computersandacc"><li className="mt-2 text-black ml-8">Computers & accessories</li></Link> 
+          
+         <Link to="/tvandacc"><li className="mt-2 text-black ml-8">TV, Video & Home Audio<br/> Electronics</li></Link>
+      
+         <Link to="/audioheadphone"><li className="mt-2 text-black ml-8">Portable Adio &<br/> Headphone</li></Link> 
+         </ul>
 <br/>
 
 <hr/>
@@ -50,13 +49,13 @@ const Electronics = () => {
 
   <h1  className="ml-8 text-black">Your favorite brands</h1>
   <ul>
-    <li className="ml-8 mt-2 text-black">Apple</li>
-    <li className="ml-8 mt-2 text-black">Dell</li>
-    <li className="ml-8 mt-2 text-black">hp</li>
-    <li className="ml-8 mt-2 text-black">Lenovo</li>
-    <li className="ml-8 mt-2 text-black">Samsung</li>
+   <Link to="/apple" ><li className="ml-8 mt-2 text-black">Apple</li></Link>
+   <Link to="/dell" ><li className="ml-8 mt-2 text-black">Dell</li></Link>
+     <Link to="/hp" ><li className="ml-8 mt-2 text-black">hp</li></Link>
+     <Link to="/lenovo" >  <li className="ml-8 mt-2 text-black">Lenovo</li></Link>
+     <Link to="/samsung" > <li className="ml-8 mt-2 text-black">Samsung</li></Link>
 </ul>
-        </ul>
+        
         
       </div>
      <div className="w-3/4">
@@ -65,55 +64,41 @@ const Electronics = () => {
       </div>
       <div className="flex gap-5   mt-8">
         <div >
-          <img src={Images3} alt="" className="h-64 w-96" />
+         <Link to="/smartphandwatch"><img src={Images3} alt="" className="h-64 w-96" /></Link> 
         </div>
         <div>
-          <img src={Images4} alt="" className="h-64 w-96" />
+         <Link to="/computersandacc"><img src={Images4} alt="" className="h-64 w-96" /></Link> 
         </div>
         
       </div>
       <h1 className="text-shop ">Shop by Category</h1>
       <div className="flex gap-9 ml-9 ">
         <div>
-          <img
+          <Link to="/tvandacc"><img
             src={Images6}
             alt=""
             className="h-48 w-48 border hover:border-black rounded-2xl"
-          />
-          <h4 className="  mt-4 ">TV, Video & Home Audio Electronics</h4>
+          /></Link>
+          <h4 className="  mt-4 ml-9">TV, Video & Home<br/> Audio Electronics</h4>
         </div>
         
         <div>
-          <img
+          <Link to="/camera"><img
             src={Images7}
             alt=""
             className="h-48 w-52 border hover:border-black rounded-2xl"
-          />
-          <h4  className=" mt-4 ml-9">Cameras</h4>
+          /></Link>
+          <h4  className=" mt-4 ml-20">Camera</h4>
         </div>
+       
+       
         <div>
-          <img
-            src={Images8}
-            alt=""
-            className="h-48 w-52 border hover:border-black rounded-2xl"
-          />
-          <h4 className=" mt-4 ml-9">Video Games</h4>
-        </div>
-        <div>
-          <img
-            src={Images9}
-            alt=""
-            className="h-48 w-48 border hover:border-black rounded-2xl"
-          />
-          <h4 className=" mt-4 ">Surveillance & Smart Home Electronics</h4>
-        </div>
-        <div>
-          <img
+          <Link to="/audioheadphone"><img
             src={Images10}
             alt=""
             className="h-48 w-48 border hover:border-black rounded-2xl"
-          />
-          <h4 className=" mt-4 ml-9">Portable Adio & Headphones</h4>
+          /></Link>
+          <h4 className=" mt-4 ml-9">Portable Adio <br/>& Headphones</h4>
         </div>
       </div>
       <br />
@@ -121,41 +106,46 @@ const Electronics = () => {
       <hr />
       <h1 className="text-brand">Shop by Brand</h1>
       <div className="flex gap-9 ">
-        <div className="box-1">
+       <Link to="/apple"><div className="box-1">
           <img
             src={Images11}
             alt=""
             className="h-48 w-44 border hover:border-black"
           />
-        </div>
-        <div className="box-2">
+        </div></Link> 
+
+        <Link to="/dell"> <div className="box-2">
           <img
             src={Images12}
             alt=""
             className="h-48 w-44 border hover:border-black"
           />
-        </div>
-        <div className="box-3">
+        </div></Link>
+
+         <Link to="/hp"><div className="box-3">
           <img
             src={Images13}
             alt=""
             className="h-48 w-44  border hover:border-black"
           />
-        </div>
-        <div className="box-4">
+        </div></Link>
+
+        <Link to="/lenovo"> <div className="box-4">
           <img
             src={Images14}
             alt=""
             className="h-48 w-44  border hover:border-black"
           />
-        </div>
-        <div className="box-5">
+        </div></Link>
+
+        <Link to="/samsung"> <div className="box-5">
           <img
             src={Images15}
             alt=""
             className="h-48 w-44  border hover:border-black"
           />
         </div>
+        </Link>
       </div>
      </div>
 

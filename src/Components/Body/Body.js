@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Image1 from "../Asset/01_P_Aeng.jpg"
-import Image2 from "../Asset/03_Pre-loved Luxuryeng.jpg"
+
 import Image3 from "../Asset/04_Sneakerseng.jpg"
 import Image4 from "../Asset/05_Watcheseng.jpg"
 import Image5 from "../Asset/06_Handbagseng.jpg"
@@ -18,10 +18,10 @@ const Body = () => {
         </ul>
         <div className='flex m-16 gap-3 p-10'>
         <div className=''><img src={Image1} alt='tyre'/><p>part & accessories</p></div>
-        <div className=''><img src={Image2} alt='tyre'/> pre-love luxury</div>
+        {/* <div className=''><img src={Image2} alt='tyre'/> pre-love luxury</div> */}
         <div className=''><img src={Image3} alt='tyre'/>sneakers</div>
-        <div className=''><img src={Image4} alt='tyre'/>watches</div>
-        <div className=''><img src={Image5} alt='tyre'/>hand bag</div>
+       <Link to="/watches"> <div className=''><img src={Image4} alt='tyre'/>watches</div></Link>
+        <Link to="/womenbags" ><div className=''><img src={Image5} alt='tyre'/>hand bag</div></Link>
         <div className=''><img src={Image6} alt='tyre'/> start selling</div>
         <div className=''><img src={Image7} alt='tyre'/>Trading Cards</div>
         </div>

@@ -1,0 +1,12 @@
+.main-dis{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.sub-dis{
+    width: 350px;
+    gap: 20px;
+    border: 2px solid black;
+    margin-left: 120px;
+    margin-top: 30px;
+}

@@ -1,0 +1,20 @@
+.display-main{
+
+    display: flex;
+    justify-content: space-between;
+  
+    
+}
+.display-main img{
+    width: 600px;
+    height: 500px;
+    margin-left: 20px;
+    
+}
+
+
+.disp-3{
+    background-color: rgb(255, 0, 195);
+    width: 700px;
+    
+}

@@ -1,0 +1,12 @@
+.main-light{
+    display: flex;
+flex-wrap: wrap;
+}
+
+.sub-light{
+    width: 350px;
+    gap: 20px;
+    border: 2px solid black;
+    margin-left: 120px;
+    margin-top: 30px;
+}

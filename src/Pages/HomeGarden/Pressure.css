@@ -1,0 +1,11 @@
+.main-pre{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-pre{
+    width: 350px;
+    gap: 20px;
+    border: 2px solid black;
+    margin-left: 120px;
+    margin-top: 30px;
+}

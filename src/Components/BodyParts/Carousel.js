@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { FaCircleArrowRight, FaCircleArrowLeft } from "react-icons/fa6";
+
+
  export default function Carousel({slides}){
 
     let[Current,setCurrent]=useState(0);
@@ -21,7 +23,7 @@ import { FaCircleArrowRight, FaCircleArrowLeft } from "react-icons/fa6";
                 transform:`translateX(-${Current*100}%)`,
             }}>
             {slides.map((s)=>{
-                return <img src={s} alt="image" className="w-90 rounded-xl"/>;
+                return <img src={s} alt="image" className="w-90 rounded-xl"/>
 
             })}
          

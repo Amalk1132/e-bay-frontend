@@ -1,0 +1,14 @@
+.main-skin{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.sub-skin{
+    width: 400px;
+    gap: 20px;
+    border: 2px solid black;
+ margin-left: 80px;
+    margin-top: 30px;
+}

@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import Otp from "../NavbarTop/Otp";
+// import React, { useEffect } from "react";
+// import Otp from "../NavbarTop/Otp";
 import "./Signup.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -60,8 +60,7 @@ const Signup = () => {
      setFormErrors(validate(formValues));
 
      if(Object.keys(errors).length===0){
-      
-
+  
       axios.post("http://localhost:8090/user/register",formValues)
       .then((res)=>{
         if(res.data==="success"){
@@ -226,10 +225,11 @@ const Signup = () => {
       </div>
     
     </section>
-    <div className={`${ShowOtp?"block":"hidden"}`}>
+    <div className={`w-screen  h-96 flex justify-center ${ShowOtp?"block":"hidden"}`}>
+    {/* <div className=""> */}
             <form onSubmit={handlesubmit}>
             <input type="tel" name="otp" value={Otp} onChange={(e)=>setOtp(e.target.value)}/>
-            <button>verify otp</button>
+            <button className="border border-black w-24 ml-2 bg-blue-500 rounded-md" >verify otp</button>
             </form>
         </div>
 

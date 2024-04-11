@@ -1,0 +1,17 @@
+.main-hp{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+.hp-block{
+    width: 300px;
+    gap: 20px;
+    border: 2px solid black;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+/* .hp-block img{
+    width: 200px;
+    height: 200px;
+} */

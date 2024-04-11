@@ -1,6 +1,7 @@
-import React, { useEffect, useState, } from "react";
+import React, {  useState, } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios"
+import Image1 from "../Asset/ebay-img.png"
 
 import "./Login.css";
 import { Link } from "react-router-dom";
@@ -41,7 +42,9 @@ const Login = () => {
   return (
     <div className="login-main">
       <div className=" login-page">
-        <h1 className="text-center p-10 font-bold  "> login page</h1>
+      <img src={Image1} alt="logo" className="w-36 h-16 ml-32 mt-3"/>
+        <h1 className="text-center p-10 font-bold   "> login page</h1>
+        
         <hr />
         <div className="border-section">
           <br />
