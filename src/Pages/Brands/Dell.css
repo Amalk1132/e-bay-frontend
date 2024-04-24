@@ -1,16 +1,22 @@
-.main-dell{
-    display: flex;
-    margin-left: 90px;
-}
-.dell-block{
-    width: 400px;
-    gap: 20px;
-    border: 2px solid black;
-    margin: 15px;
-    margin-top: 30px;
-}
-.dell-block img{
-    width: 400px;
-    height: 300px;
 
+.dell-block{
+    width: 1350px;   
+    border: 2px solid black;
+    margin-left: 100px;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+
+
+.del-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.del-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

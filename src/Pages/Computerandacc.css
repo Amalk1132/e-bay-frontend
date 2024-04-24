@@ -1,13 +1,24 @@
-.main-computer{
+/* .main-computer{
     display:flex;
     flex-wrap: wrap;
 
-}
+} */
 .sub-computer{
-    width: 350px;
+    width: 1350px;
     gap: 5px;
     border: 2px solid black;
     border-radius: 10px;
     margin-left: 120px;
     margin-top: 30px;
+    display: flex;
+}
+.com-img img{
+    height: 300px;
+    width: 300px;
+
+}
+.com-part{
+    margin-left: 70px;
+    margin-top: 80px;
+
 }

@@ -1,14 +1,22 @@
-.main-skin{
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 
 .sub-skin{
-    width: 400px;
+    width: 1350px;
+  
     gap: 20px;
     border: 2px solid black;
- margin-left: 80px;
+    margin: 15px;
     margin-top: 30px;
+    margin-left: 60px;
+    display: flex;
+    border-radius: 10px;
+}
+.skin-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.skin-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

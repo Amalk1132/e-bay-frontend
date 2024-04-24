@@ -1,12 +1,20 @@
-.main-fitness{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .sub-fitness{
-    width: 400px;
+    width: 1350px; 
     gap: 20px;
     border: 2px solid black;
- margin-left: 80px;
+    margin: 15px;
     margin-top: 30px;
+    display: flex;
+    border-radius: 10px;
 
+}
+.fit-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.fit-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

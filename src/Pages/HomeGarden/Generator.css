@@ -1,12 +1,19 @@
-.main-gen{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .sub-gen{
-    width: 350px;
+    width: 1350px;
     gap: 20px;
     border: 2px solid black;
-    margin-left: 120px;
+ margin-left: 80px;
     margin-top: 30px;
+    display: flex;
+    border-radius:10px ;
 }
+.gen-img img{
+    height: 300px;
+    width: 300px;
 
+}
+.gen-part{
+    margin-left: 70px;
+    margin-top: 80px;
+}

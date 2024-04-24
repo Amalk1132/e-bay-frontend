@@ -1,15 +1,19 @@
-.main-fur{
-display: flex;
-flex-wrap: wrap;
-}
+
 .sub-fur{
-    width: 350px;
+    width: 1350px;
     gap: 20px;
     border: 2px solid black;
-    margin-left: 120px;
+ margin-left: 80px;
     margin-top: 30px;
+    display: flex;
+    border-radius:10px ;
 }
+.fur-img img{
+    height: 300px;
+    width: 300px;
 
-.btn-remove{
-    background-color: red !important;
+}
+.fur-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

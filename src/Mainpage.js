@@ -9,7 +9,12 @@ import Pic2 from "./Components/Asset/s-l1600.jpg"
 import Header, { Lastnav } from "./Components/Header/Header";
 import Home from "./Components/Navbarbottom/Home";
 
+
 function Mainpage() {
+
+    // window.location.reload()
+
+
   const Slides = [
     Pic2,
     Pic1,

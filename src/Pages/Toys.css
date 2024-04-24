@@ -1,0 +1,19 @@
+.sub-toys{
+    width: 1350px;
+    display: flex;
+    border: 2px solid black;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;    
+} 
+
+.toys-img img{
+    height: 300px;
+    width: 300px;
+   
+}
+.toys-part{
+    margin-left: 70px;
+    margin-top: 80px;    
+}
+

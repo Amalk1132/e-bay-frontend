@@ -1,12 +1,19 @@
-.main-aud{
-display: flex;
 
-}
 .sub-aud{
-    width: 400px;
-    /* height: 200px; */
+    width: 1350px;
     gap: 20px;
     border: 2px solid black;
     margin: 15px;
     margin-top: 30px;
+    display: flex;
+    border-radius: 10px;
+}
+.aud-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.aud-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

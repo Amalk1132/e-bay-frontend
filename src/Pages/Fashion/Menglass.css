@@ -1,12 +1,18 @@
-.main-glass{
-    display: flex;
-    flex-wrap: wrap;
 
-}
 .sub-glass{
-    width: 400px;
-    gap: 20px;
+    width: 1350px;
+    display: flex;
     border: 2px solid black;
- margin-left: 80px;
+    margin-left: 70px;
     margin-top: 30px;
+    border-radius: 10px;
+}
+.mgls-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.mgls-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

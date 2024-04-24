@@ -1,14 +1,19 @@
-.main-womenshoe{
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 .sub-womenshoe{
-    width: 400px;
-    gap: 20px;
+    width: 1350px;
+    display: flex;
     border: 2px solid black;
- margin-left: 80px;
+    margin-left: 70px;
     margin-top: 30px;
+    border-radius: 10px;
 
+}
+.wsho-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.wsho-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

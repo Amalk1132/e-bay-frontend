@@ -1,0 +1,38 @@
+.toys{
+    width: 210px;
+    height: 120px;
+  
+}
+.toys img{
+    border-radius:190px;
+}
+.toys h2{
+    margin-left: 91px;
+    margin-top: 10px;
+
+}
+.card h2{
+    margin-left: 58px;
+    margin-top: 10px;
+
+}
+.bag h2{
+    margin-left: 70px;
+    margin-top: 10px;
+
+}
+.tyre h2{
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+.watch h2{
+    margin-left: 78px;
+    margin-top: 10px;
+
+}
+.sneaker h2{
+    margin-left: 68px;
+    margin-top: 10px;
+
+}

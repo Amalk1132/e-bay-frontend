@@ -1,12 +1,19 @@
-.main-acc{
-    display: flex;
-    flex-wrap: wrap;
-}
-.sub-acc{
-    width: 400px;
-    gap: 20px;
-    border: 2px solid black;
- margin-left: 80px;
-    margin-top: 30px;
 
+.sub-acc{
+    width: 1350px;
+    display: flex;
+    border: 2px solid black;
+    margin-left: 70px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+.acc-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.acc-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

@@ -1,0 +1,19 @@
+.sub-sneaker{
+    width: 1350px;
+    display: flex;
+    border: 2px solid black;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;    
+} 
+
+.sneaker-img img{
+    height: 300px;
+    width: 300px;
+   
+}
+.sneaker-part{
+    margin-left: 70px;
+    margin-top: 80px;    
+}
+

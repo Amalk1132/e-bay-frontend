@@ -1,13 +1,21 @@
-.main-hair{
-
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .sub-hair{
-    width: 400px;
+    width: 1350px;
+  
     gap: 20px;
     border: 2px solid black;
- margin-left: 80px;
+    margin: 15px;
     margin-top: 30px;
+    margin-left: 70px;
+    display: flex;
+    border-radius: 10px;
+}
+.hair-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.hair-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

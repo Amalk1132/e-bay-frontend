@@ -1,13 +1,19 @@
-.main-watch{
-    display: flex;
-    flex-wrap: wrap;
 
-}
 
 .sub-watch{
-    width: 400px;
-    gap: 20px;
+    width: 1350px;
+    display: flex;
     border: 2px solid black;
- margin-left: 80px;
+    margin-left: 70px;
     margin-top: 30px;
+    border-radius: 10px;
+}
+.wat-img img{
+    height: 300px;
+    width: 300px;
+}
+
+.wat-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

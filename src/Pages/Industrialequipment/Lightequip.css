@@ -1,13 +1,19 @@
-.main-light{
-    display: flex;
-    flex-wrap: wrap;
 
-}
 .sub-light{
-    width: 400px;
+
     gap: 20px;
     border: 2px solid black;
  margin-left: 80px;
     margin-top: 30px;
+    border-radius:10px ;
+    
+}
+.light-img img{
+    height: 200px;
+    width: 400px;
 
+}
+.light-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

@@ -1,13 +1,19 @@
-.main-prin{
-    display: flex;
-    flex-wrap: wrap;
 
-}
 .sub-prin{
-    width: 400px;
+    width: 1350px;
     gap: 20px;
     border: 2px solid black;
  margin-left: 80px;
     margin-top: 30px;
+    display: flex;
+    border-radius:10px ;
+}
+.prin-img img{
+    height: 300px;
+    width: 300px;
 
+}
+.prin-part{
+    margin-left: 70px;
+    margin-top: 80px;
 }

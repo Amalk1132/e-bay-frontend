@@ -4,9 +4,19 @@
 
 }
 .sub-tv-appli{
-    width: 400px;
-    gap: 20px;
+    width: 1350px;   
+    display: flex;
     border: 2px solid black;
-    margin: 15px;
+    margin-left: 100px;
     margin-top: 30px;
+    border-radius: 10px;
+}
+.ele-img img{
+    height: 300px;
+    width: 300px;
+}
+.ele-part{
+    margin-left: 70px;
+    margin-top: 80px;
+
 }
